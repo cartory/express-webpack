@@ -1,0 +1,32 @@
+{
+  "name": "express-webpack",
+  "version": "1.0.0",
+  "description": "test express app build with webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cartory/express-webpack.git"
+  },
+  "keywords": [
+    "express",
+    "webpack"
+  ],
+  "author": "cartory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cartory/express-webpack/issues"
+  },
+  "homepage": "https://github.com/cartory/express-webpack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

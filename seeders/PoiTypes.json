@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "nombre": "Oficinas de Gobierno"
+    },{
+        "id": 2,
+        "nombre": "Centros Comerciales"
+    },{
+        "id":3,
+        "nombre":"Centros de Salud"
+    },{
+        "id":4,
+        "nombre":"Universidades"
+    },{
+        "id":5,
+        "nombre":"Centros Culturales"
+    },{
+        "id":6,
+        "nombre":"Museos"
+    },{
+        "id":7,
+        "nombre":"Deportes"
+    },{
+        "id":8,
+        "nombre":"Cementerios"
+    },{
+        "id":9,
+        "nombre":"Iglesias"
+    },{
+        "id":10,
+        "nombre":"Mercados"
+    },{
+        "id":11,
+        "nombre":"Atractivos Turisticos"
+    },{
+        "id":12,
+        "nombre":"Monumentos"
+    },{
+        "id":13,
+        "nombre":"Parques"
+    },{
+        "id":14,
+        "nombre":"Plazas"
+    }
+]

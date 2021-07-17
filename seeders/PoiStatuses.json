@@ -1,0 +1,13 @@
+[{
+    "status_name":"Aprobado",
+    "status_is_available":true
+},{
+    "status_name":"Rechazado",
+    "status_is_available":true
+},{
+    "status_name":"Publicado ",
+    "status_is_available":true
+},{
+    "status_name":"Revision",
+    "status_is_available":true
+}]

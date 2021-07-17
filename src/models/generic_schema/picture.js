@@ -1,5 +1,8 @@
-import DataTypes, { Model } from 'sequelize'
+import DataTypes,{  Model } from 'sequelize'
 import sequelize from '../../config/sequelize'
+import Line from './line'
+import Poi from './poi'
+import Stop from './stop'
 
 class Picture extends Model { }
 
@@ -10,7 +13,7 @@ Picture.init({
         autoIncrement: true,
         autoIncrementIdentity: true,
     },
-    pic_caption: DataTypes.STRING,
+    pic_caption : DataTypes.STRING,
     pic_height: DataTypes.INTEGER,
     pic_width: DataTypes.INTEGER,
     pic_url: DataTypes.TEXT,

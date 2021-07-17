@@ -1,5 +1,6 @@
-import DataTypes, { Model } from 'sequelize'
+import DataTypes,{  Model } from 'sequelize'
 import sequelize from '../../config/sequelize'
+import Line from './line'
 
 class Shape extends Model { }
 

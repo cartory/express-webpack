@@ -1,9 +1,9 @@
 import sequelize from '../config/sequelize'
 import { Model, DataTypes } from 'sequelize'
 
-class ZonaUV extends Model { }
+class zonaUV extends Model { }
 
-ZonaUV.init({
+zonaUV.init({
     id: {
         type: DataTypes.BIGINT,
         primaryKey: true,
@@ -14,23 +14,23 @@ ZonaUV.init({
     poligono: {
         allowNull: false,
         type: DataTypes.GEOMETRY('POLYGON'),
-    },
-}, {
-    sequelize
-})
+    }
+
+}, { sequelize })
+
 
 /**
  * Devuelve que zonaUV contiene el punto
  */
-ZonaUV.ST_contains = (([lat, lng]) => {
-    return (`
+zonaUV.ST_Contains = (([lat, lng]) => {
+    return `
         SELECT z.*
         FROM public."zonaUVs" as z
         WHERE ST_contains(
             ST_FlipCoordinates(z.poligono),
             ST_GeomFromText('POINT (${lng} ${lat})', 4326)
         );
-    `)
+    `
 })
 
-export default ZonaUV
+export default zonaUV

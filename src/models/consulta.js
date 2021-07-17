@@ -1,4 +1,4 @@
-import { Model, DataTypes } from 'sequelize'
+import { Model, DataType, DataTypes } from 'sequelize'
 import sequelize from '../config/sequelize'
 
 class Consulta extends Model { }

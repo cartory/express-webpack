@@ -3,10 +3,8 @@ import sequelize from '../config/sequelize'
 import Categoria from './categoria'
 
 class Lugar extends Model { }
-
 class ImagenLugar extends Model { }
-
-class LugarCategoria extends Categoria { }
+class LugarCategoria extends Categoria {}
 Lugar.init({
     id: {
         type: DataTypes.BIGINT,
@@ -16,12 +14,13 @@ Lugar.init({
         autoIncrementIdentity: true,
     },
     telefono: DataTypes.STRING,
-
+   
     nombre: DataTypes.STRING,
     ciudad: DataTypes.STRING,
-    website: DataTypes.STRING,
-    lat: DataTypes.FLOAT,
-    lng: DataTypes.FLOAT,
+    website:DataTypes.STRING,
+    lat:DataTypes.FLOAT,
+    lng:DataTypes.FLOAT,
+    //latLng: DataTypes.STRING,
     descripcion: DataTypes.TEXT,
     direccion: DataTypes.STRING,
 }, { sequelize })

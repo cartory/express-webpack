@@ -1,5 +1,6 @@
 import DataTypes, { Model } from 'sequelize'
 import sequelize from '../../config/sequelize'
+import Poi from './poi'
 
 class Stop extends Model { }
 

@@ -19,8 +19,8 @@ Transporte.init({
     sequelize,
     tableName: "transporte",
     modelName: "transporte",
-    timestamps: false,
     freezeTableName: true,
+    timestamps: false,
 })
 
 export default Transporte

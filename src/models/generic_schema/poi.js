@@ -1,5 +1,7 @@
 import DataTypes, { Model } from 'sequelize'
 import sequelize from '../../config/sequelize'
+import PoiStatus from './poi_status'
+import PoiType from './poi_type'
 
 class Poi extends Model { }
 

@@ -1,5 +1,7 @@
 import { DataTypes, Model } from 'sequelize'
 import sequelize from '../../config/sequelize'
+import User from '../public_schema/user'
+import Transport from './transport'
 
 class Line extends Model { }
 

@@ -26,7 +26,7 @@ Categoria.init({
             include: [
                 'createdAt',
                 'updatedAt',
-                'deletedAt',
+                'deletedAt'
             ],
         },
     }

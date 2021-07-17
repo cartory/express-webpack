@@ -1,23 +1,21 @@
-import { ZonaUV } from '../config/relationships'
-import { Controller, defaultErrorMessage } from '../config/controller'
+import { zonaUV } from '../config/relationships'
+import { Controller } from '../config/controller'
 
-class ZonaUVController extends Controller {
+class zonaUVController extends Controller {
     constructor() {
-        super(ZonaUV)
+        super(zonaUV)
     }
 
     count = async (_, res) => {
         try {
-            return res
-                .status(200)
-                .json(await ZonaUV.count())
+            return res.status(200).json(await zonaUV.count())
         } catch (error) {
-            console.log(error);
-            return res
-                .status(500)
-                .json(defaultErrorMessage)
+            return res.status(500).json({
+                status: 500,
+                message: 'Ups!, somethign goes wrong !!'
+            })
         }
     }
 }
 
-export default new ZonaUVController()
+export default new zonaUVController()
